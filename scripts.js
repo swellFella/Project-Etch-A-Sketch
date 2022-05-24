@@ -1,16 +1,14 @@
 
 /**
- * Function that takes a number num and generates a grid size numXnum
- * the grid then is filled with divs using a for-loop
+ * Function generates a grid filled with divs
+ * Grid is created where the columns and rows are set to num arguement recieved
+ * Grid is filled by a for-loop that creats and appends div elements to #grid_container
+ * 
  */
 function setGridSize(num){
-    // creates a variable called grid_size that points to the element with ID grid_container
     grid_size = document.getElementById('grid_container');
-    // alters grid_container style attributes and set the number of repeated rows to function arg
     grid_size.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     grid_size.style.gridTemplateRows = `repeat(${num}, 1fr)`;
-
-    // After grid is created, for-loop fills area of grid with divs
     for(let i = 0; i < (num*num); i++){
         const div = document.createElement('div');
         
@@ -21,9 +19,7 @@ function setGridSize(num){
         div.style.padding = '0px';
 
         document.getElementById('grid_container').appendChild(div);        
-    }
-
-
-}
+    }//END for-loop for creating divs
+}//END function setGridSize()
 
 setGridSize(20);
