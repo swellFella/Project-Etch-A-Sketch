@@ -8,6 +8,8 @@ slider.onchange = function(){
     setGridSize(this.value);
 }
 
+// Clear button sets clears innerHTML of grid container
+// then sets the size of the grid the whatever value the slider is currently on
 const clear_button = document.getElementById('clear_button');
 clear_button.addEventListener('click', ()=>{
     grid_size.innerHTML = '';
