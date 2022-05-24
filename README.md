@@ -7,4 +7,6 @@ https://swellfella.github.io/Project-Etch-A-Sketch/
 Project demonstrates:
 * Integrating javascript and CSS externally
 * Creating elements and changing attributes using javascript
-* 
+* Using event listeners to trigger actions
+* CSS grid + CSS flexbox
+* Adding styles to elements
