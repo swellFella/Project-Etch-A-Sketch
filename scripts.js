@@ -11,17 +11,12 @@ function setGridSize(num){
     grid_size.style.gridTemplateRows = `repeat(${num}, 1fr)`;
     for(let i = 0; i < (num*num); i++){
         const div = document.createElement('div');
-
-        // div attributes
-        div.setAttribute('class',`grid_cell${i+1}`);
-        div.style.border = '1px dotted black';
-        div.style.margin = '0px';
-        div.style.padding = '0px';
+        div.setAttribute('class',`grid_cell_blank`);
 
         // Event listener that changes div background
         // color to black when the mouse hovers over it
-        div.addEventListener('mouseover', function(){
-            div.style.backgroundColor = 'black';
+        div.addEventListener('mouseover', () =>{
+            div.className += ' black_cell';
         });
         document.getElementById('grid_container').appendChild(div);
 

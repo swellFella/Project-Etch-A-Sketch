@@ -9,3 +9,12 @@ body{
     width: 700px;
     height: 700px;
 }
+.grid_cell_blank{
+    border: 1px dotted black;
+    margin: 0px;
+    padding: 0px;
+
+}
+.black_cell{
+    background-color: black;
+}
