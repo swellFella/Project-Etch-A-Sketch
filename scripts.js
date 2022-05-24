@@ -8,6 +8,11 @@ slider.onchange = function(){
     setGridSize(this.value);
 }
 
+const clear_button = document.getElementById('clear_button');
+clear_button.addEventListener('click', ()=>{
+    grid_size.innerHTML = '';
+    setGridSize(slider.value);
+});
 /**
  * Function generates a grid filled with divs
  * Grid is created where the columns and rows are set to num arguement recieved
