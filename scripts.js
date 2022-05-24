@@ -14,8 +14,6 @@ function setGridSize(num){
 
         // div attributes
         div.setAttribute('class',`grid_cell${i+1}`);
-        div.style.height = '10px';
-        div.style.width = '10px';
         div.style.border = '1px dotted black';
         div.style.margin = '0px';
         div.style.padding = '0px';
@@ -34,4 +32,4 @@ function setGridSize(num){
 
 
 
-setGridSize(100);
+setGridSize(50);
