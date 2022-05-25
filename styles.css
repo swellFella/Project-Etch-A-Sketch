@@ -53,10 +53,10 @@ body{
     border: solid 2px rgb(37, 37, 37);
     border-radius: 50%;
 }
-#clear_button:hover{
+.menu_button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-#clear_button:active{
+.menu_button:active{
     transform: translateY(2px);
     background-color: rgba(255, 117, 25, 0.705);    
 }
